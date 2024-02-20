@@ -440,7 +440,7 @@ a {
 
 .partners-1-p {
     color: #FFF;
-    width: 470px;
+    max-width: 470px;
     margin: 0 auto;
     margin-top: 30px;
     font-family: 'Oswald', sans-serif;
@@ -536,7 +536,7 @@ a {
 .testimonials-1-2-1-p {
     color: #FFF;
     font-family: 'Oswald', sans-serif;
-    width: 350px;
+    max-width: 350px;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -566,7 +566,7 @@ a {
 
 }
 
-.fill-1-1{
+.fill-1-1 {
     justify-content: center;
     text-align: center;
 }
@@ -574,7 +574,7 @@ a {
 .fill-1-1-h3 {
     color: #FFF;
     font-family: 'Oswald', sans-serif;
-    width: 400px;
+    max-width: 400px;
     font-size: 52px;
     font-weight: 400;
     line-height: 62px;
@@ -652,7 +652,7 @@ a {
 .footer-2-1 {
     display: flex;
     align-items: center;
-    width: 300px;
+    max-width: 300px;
 }
 
 .footer-2-1-p {
@@ -668,7 +668,7 @@ a {
 .footer-2-2 {
     display: flex;
     align-items: center;
-    width: 300px;
+    max-width: 300px;
     margin-top: 30px;
 }
 
@@ -680,13 +680,17 @@ a {
 
 
 @media (max-width:1025px) {
+    .container-1 {
+        padding: 0 10px;
+    }
+
     .features-2 {
         display: flex;
         flex-direction: column;
     }
 
     .features-2-img-1 {
-        width: 720px;
+        max-width: 720px;
         margin: 100px auto;
     }
 
@@ -740,6 +744,12 @@ a {
         margin: 50px auto;
         flex-direction: column;
         align-items: center;
+
+    }
+
+    .gallery-2-img {
+        width: 100%;
+        padding: 0 10px;
     }
 
 
@@ -749,8 +759,7 @@ a {
     }
 
     .partners-2 {
-        justify-content: center;
-        align-items: center;
+        place-items: center;
         display: grid;
 
     }
@@ -772,6 +781,10 @@ a {
 
     .footer-2 {
         margin: 100px auto;
+        width: 400px;
+
+
+
     }
 
 
@@ -779,8 +792,12 @@ a {
 
 @media (max-width:768px) {
 
+    .header-nav-img {
+        padding: 0 10px;
+    }
+
     .features-2-img-1 {
-        width: 420px;
+        max-width: 300px;
     }
 
     .header-nav-link {
@@ -797,6 +814,7 @@ a {
 
     .container-p {
         font-size: 24px;
+        padding: 0 15px;
     }
 
     .features-1-2-h3 {
@@ -805,6 +823,8 @@ a {
 
     .features-1-2-p {
         font-size: 24px;
+        padding: 0 15px;
+
     }
 
     .contents-1-h3 {
@@ -814,6 +834,7 @@ a {
 
     .contents-1-p {
         font-size: 20px;
+        padding: 0 15px;
     }
 
     .contents-img {
@@ -835,24 +856,37 @@ a {
     }
 
     .partners-1-p {
-        font-size: 16px ;
+        font-size: 16px;
+        padding: 0 15px;
     }
 
     .testimonials-h3 {
         font-size: 48px;
     }
 
-    .fill-1-1{
+    .fill-1-1 {
         margin-top: 50px;
     }
 
-    .fill-1-1-h3{
+    .fill-1-1-h3 {
         margin-top: 50px;
         font-size: 36px;
     }
 
-    .fill-1-img{
-        width: 360px;
+    .fill-1-img {
+        width: 100%;
+    }
+
+    .footer-1-1{
+        text-align: center;
+    }
+
+    .footer-2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
 }
