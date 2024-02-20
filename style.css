@@ -894,3 +894,19 @@ a {
     }
 
 }
+
+@media (max-width:320px) {
+ 
+    .container-1{
+        max-width: 250px;
+    }
+
+    .container-a-1{
+        padding: 10px 15px;
+    }
+
+    .container-a-2 {
+        padding: 10px 15px;
+    }
+
+}
